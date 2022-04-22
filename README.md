@@ -1,4 +1,5 @@
 # Gatorhub - An Online Personal Scheduling Tool
+### CSC 642 - Team 09
 ### San Francisco State University (Spring 2022)
 
 # Team Members
