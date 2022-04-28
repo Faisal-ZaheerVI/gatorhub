@@ -1,0 +1,18 @@
+.nav {
+    overflow: hidden;
+    background-color: #4A217B;
+}
+a{
+    color: #FCCB06;
+}
+.title{
+    text-align: center;
+}
+.dropbtn {
+    background-color: gray
+    ;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
