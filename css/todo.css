@@ -585,6 +585,12 @@ p{
       text-decoration: none;
   }
   .title{
+      color: #FCCB06;
+      text-decoration: none;
       padding: 4px 375px;
       font-size: 50px;
   }
+
+  .title-yellow:hover {
+        color: #FCCB06;
+      }
