@@ -1,0 +1,17 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.nav-bar {
+    background-color: #4A217B;
+    padding: 10px;
+    text-align: center;
+}
+a{
+    color: #FCCB06;
+    text-decoration: none;
+}
+.title{
+    padding: 4px 375px;
+    font-size: 50px;
+}

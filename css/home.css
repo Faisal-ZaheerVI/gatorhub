@@ -1,20 +1,4 @@
-body, html {
-    margin: 0;
-    padding: 0;
-}
-.nav-bar {
-    background-color: #4A217B;
-    padding: 10px;
-    text-align: center;
-}
-a{
-    color: #FCCB06;
-    text-decoration: none;
-}
-.title{
-    padding: 4px 375px;
-    font-size: 50px;
-}
+
 img {  
     width: 350px; 
     float: left; 
@@ -25,13 +9,21 @@ h1{
     text-align: center;
 }
 p{
-    font-size: 100px;
+    font-size: 500%;
     text-align: center;
     color: #FCCB06;
 }
-.button{
-    display: center;
+.btn{
+    text-align: center;
 }
+.start-btn{
+    font-size: 40px;
+    color: #FCCB06;
+    background-color: #4A217B;
+    width: 30%;
+    height: 50px;
+}
+
 /* Dropdown Button */
 .dropbtn {
     background-color: gray;
