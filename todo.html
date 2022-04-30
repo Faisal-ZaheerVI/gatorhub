@@ -3,24 +3,26 @@
 
 <head>
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="./css/todo.css" rel="stylesheet" />
     <title>Document</title>
 </head>
 
 <body>
-    <div class="white_background">
-        <div class="header_background"></div><span class="header_title">GATORHUB
-        </span>
-        <!div class="dropdown_menu">
-          <button class="dropdown_menu" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <li><a class="drop_down_reminders1" href="reminders.html" display:block>Reminders</a></li>
-              <li><a class="drop_down_agenda1" href="agenda_march.html" display:block>Agenda</a></li>
-              <li><a class="drop_down_todo1" href="#" display:block>To-Do</a></li>
-              <li><a class="drop_down_notes1" href="notes.html" display:block>Notes</a></li>
-            </div>
-        </button>
-        <!/div>
+  <div class="nav-bar">
+    <a href="home.html" class="title">GATORHUB</a>
+
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa fa-bars" style="font-size:48px;color: #4A217B"></i></button>
+          <div class="dropdown-content">
+              <a href="reminders.html">Reminders</a>
+              <a href="./Agenda - March/index.html">Agenda</a>
+              <a href="todo.html">To-do</a>
+              <a href="notes.html">Notes</a>
+          </div>
+        </div>
+      </div>
+
         <div class="university_list"></div>
         <div class="university_add_item"></div>
         <div class="office_list"></div>
@@ -32,15 +34,8 @@
         <div class="office_title"></div>
         <div class="university_title"></div>
         <button class="plus_button" id = plusButton></button>
-        <div class="button_content" id = "button_content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
-        <!div class="drop_down"><!/div>
-        <!div class="drop_down_agenda"><!/div>
-        <!div class="drop_down_notes"><!/div>
-        <!div class="drop_down_todo"><!/div><!span class="drop_down_reminders1"><!/span><span class="drop_down_agenda1">Agenda</span><span
-            class="drop_down_notes1">Notes</span><span class="drop_down_todo1">To-Do</span><span class="v4_42">To-Do</span><span
+
+        <span class="drop_down_todo1">To-Do</span><span class="v4_42">To-Do</span><span
             class="v4_44">University</span><span class="v4_46">Office</span><span
             class="v4_47">Work on PPT</span><span class="v4_56">Grocery Shopping</span><span class="v4_63">Add
             Item</span><span class="v4_73">Add Item</span><span class="v4_74">Add Item</span>
