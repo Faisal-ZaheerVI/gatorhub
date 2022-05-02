@@ -21,7 +21,7 @@
     color: rgba(0,0,0,1);
     position: absolute;
     top: 91px;
-    left: 640px;
+    left: 630px;
     font-family: Inter;
     font-weight: Regular;
     font-size: 32px;
@@ -56,7 +56,7 @@
     width: 430px;
     color: rgba(0,0,0,1);
     position: relative;
-    top: 124px;
+    top: 28px;
     left: 610px;
     font-family: Inter;
     font-weight: Regular;
@@ -70,8 +70,8 @@
     height: 30px;
     color: rgba(0,0,0,1);
     position: relative;
-    top: 150px;
-    left: 466px;
+    top: 55px;
+    left: 460px;
     font-family: Inter;
     font-weight: Regular;
     font-size: 20px;
@@ -101,52 +101,24 @@
     opacity: 1;
     text-align: left;
   }
-  /*add button background circle*/
-  .add {
-    width: 90px;
-    height: 90px;
-    background: rgb(236, 18, 225);
-    border-radius: 50%;
-    opacity: 1;
-    position: absolute;
-    top: 620px;
-    left: 1170px;
-  }
-  /*plus sign*/
-  .line1 {
-    border-radius: 5px;
-    color: #FFF;
-    cursor: pointer;
-  }
-  /*also part of plus sign*/
-  .line1:after{
-    position: absolute;
-    top: 610px;
-    left: 1185px;
-    content: "\002B";
-    font-size: 100px;
-    color: #FFF;
-    line-height: 100px;
-    text-align: center;
-  }
   .prev {
     float: left;
     padding-top: 4px;
     position: relative;
-    top: 70px;
+    top: -15px;
     left: 545px;
   }
   .next {
     float: right;
     padding-top: 4px;
     position: relative;
-    top: 70px;
-    right: 580px;
+    top: -15px;
+    right: 590px;
   }
   .calendar{
     position: relative;
-    top: 70px;
-    left: 1000px;
+    top: -28px;
+    left: 1005px;
     color: black;
     font-size: 20px;
   }
