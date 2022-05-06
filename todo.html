@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./css/todo.css" rel="stylesheet" />
+    <title>Document</title>
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="nav-bar">
+    <a href="home.html" class="nav-title title-yellow">GATORHUB</a>
+
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa fa-bars" style="font-size:48px;color: #4A217B"></i></button>
+          <div class="dropdown-content">
+              <a href="reminders.html">Reminders</a>
+              <a href="./Agenda - March/index.html">Agenda</a>
+              <a href="todo.html">To-do</a>
+              <a href="notes.html">Notes</a>
+          </div>
+        </div>
+      </div>
+
+        <div class="university_list"></div>
+        <div class="university_add_item"></div>
+        <div class="office_list"></div>
+        <div class="office_add_item"></div>
+        <div class="v4_69"></div><span class="v4_58">CSC 642 Phase 3</span><span class="v4_59">CSC 600 Homework
+            2</span><span class="v4_55">Send out the report</span>
+        <div class="personal_list"></div><span class="v4_57">Go to the bank</span>
+        <div class="personal_title"></div>
+        <div class="office_title"></div>
+        <div class="university_title"></div>
+        <button type="button" class="plus_button" data-toggle="modal" data-target="#myModal" id = plusButton>
+          <div class="plus" >
+            <div class="bar horizontal"></div>
+            <div class="bar vertical"></div>
+          </div>
+        </button>
+
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <input style="height:40px;font-size:14pt; font-family: Inter;
+                font-weight: Regular; text-align:center;"
+                align = "middle" type="text" id="addTitle" name="addTitle" placeholder="Title">
+              </div>
+              <div class="modal-body">
+                <input style = "font-family: Inter;
+                font-weight: Regular; text-align:center;"
+                type="text" id="addToDo" name="addToDo" placeholder="Add To Do...">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" style="height:40px;font-size:14pt; font-family: Inter;
+                font-weight: Regular; text-align:center; background:rgba(158,118,205,1); border-radius: 15%;">Post</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <span class="drop_down_todo1">To-Do</span><span class="v4_42">To-Do</span><span
+            class="v4_44">University</span><span class="v4_46">Office</span><span class="v4_45">Personal</span>
+
+            <span class="v4_47">Work on PPT</span>
+            <span class="v4_56">Grocery Shopping</span>
+
+            <span class="v4_63">Add Item</span><span class="v4_73">Add Item</span><span class="v4_74">Add Item</span>
+        <div class="v4_64">
+          <!div class="plus">
+            <div class="bar horizontal"></div>
+            <div class="bar vertical"></div>
+            <input type="button" name="answer" onclick="onButtonClick()" />
+            <input class="hide" type="text" id="textInput" />
+          <!/div>
+        </div>
+    </div>
+</body>
+
+</html>

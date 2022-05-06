@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Jacques+Francois&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Adamina&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/reminders.css"/>
+
+  <title>Reminders - GatorHub</title>
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <div class="nav-bar">
+        <a href="home.html" class="nav-title">GATORHUB</a>
+        <div class="dropdown">
+          <button class="dropbtn"><i class="fa fa-bars" style="font-size:48px;color: #4A217B"></i></button>        
+          <div class="dropdown-content">
+              <a href="reminders.html">Reminders</a>
+              <a href="./Agenda - March/index.html">Agenda</a>
+              <a href="todo.html">To-do</a>
+              <a href="notes.html">Notes</a>
+          </div>
+        </div>  
+    </div>
+
+    <!-- ADD BUTTON -->
+    <button type="button" class="plus_button" data-toggle="modal" data-target="#myModal">
+        <div class="plus">
+          <div class="bar horizontal"></div>
+          <div class="bar vertical"></div>
+        </div>
+      </button>
+
+      <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <input style="height:40px;font-size:14pt; font-family: Inter;
+              font-weight: Regular; text-align:center;" type="text" id="addTitle" name="title" placeholder="Add Reminder">
+            </div>
+            <div class="modal-body">
+              <input style = "font-family: Inter;
+              font-weight: Regular; text-align:center;"
+              type="text" id="addToDo" name="addToDo" placeholder="Add Date">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" style="height:40px;font-size:14pt; font-family: Inter;
+              font-weight: Regular; text-align:center; background:rgba(158,118,205,1); border-radius: 15%;">Post</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- END of ADD BUTTON -->
+
+
+      <!-- REMINDERS LIST -->
+      <h1 class="title">Today's Reminders</h1>
+
+      <!-- <div class="all-tasks">
+        <h2 class="task-list-title">My lists</h2>
+        <ul class="task-list">
+          <li class="list-name active-list">Youtube</li>
+          <li class="list-name">Work</li>
+          <li class="list-name">Grocery</li>
+        </ul>
+
+        <form action="">
+          <input 
+            type="text"
+            class="new list"
+            placeholder="new list name"
+            aria-label="new list name"
+          />
+          <button class="btn create" aria-label="create new list">+</button>
+        </form>
+      </div> -->
+
+    <div class="todo-list">
+      <!-- <div class="todo-header">
+        <h2 class="list-title">Today's Reminders</h2>
+        <p class="task-count">3 tasks remaining</p>
+      </div> -->
+
+      <div class="todo-body">
+        <div class="tasks">
+          <div class="task">
+            <input 
+              type="checkbox"
+              id="task-1"
+            />
+            <label for="task-1">
+              <span class="custom-checkbox"></span>
+              Group meeting with GatorHub
+            </label>
+          </div>
+          <!-- /task-1 -->
+
+          <div class="task">
+              <input 
+                type="checkbox"
+                id="task-2"
+              />
+              <label for="task-2">
+                <span class="custom-checkbox"></span>
+                Go to Professor's Office Hours
+              </label>
+            </div>
+            <!-- /task-2 -->
+
+            <div class="task">
+                <input 
+                  type="checkbox"
+                  id="task-3"
+                />
+                <label for="task-3">
+                  <span class="custom-checkbox"></span>
+                  Pick up the groceries
+                </label>
+              </div>
+              <!-- /task-3 -->
+        </div>
+
+        <div class="new-task-creator">
+            <form action="">
+                <input 
+                  type="text"
+                  class="new task"
+                  placeholder="new task name"
+                  aria-label="new task name"
+                />
+                <button class="btn create" aria-label="create new task">+</button>
+              </form>
+        </div>
+        <!-- END NEW TASK CREATOR -->
+      </div>
+    </div>
+
+   
+    </div>
+
+</body>
+
+</html>
