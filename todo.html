@@ -2,13 +2,12 @@
 <html>
 
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="./css/todo.css" rel="stylesheet" />
-  <link href="./css/nav.css" rel="stylesheet" />
-  <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./css/todo.css" rel="stylesheet" />
+    <title>Document</title>
 
-  <meta charset="utf-8">
+    <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -17,7 +16,7 @@
 
 <body>
   <div class="nav-bar">
-    <a href="home.html" class="nav-title">GATORHUB</a>
+    <a href="home.html" class="title title-yellow">GATORHUB</a>
 
         <div class="dropdown">
           <button class="dropbtn"><i class="fa fa-bars" style="font-size:48px;color: #4A217B"></i></button>
@@ -31,12 +30,9 @@
       </div>
 
         <div class="university_list"></div>
-        <div class="university_add_item"></div>
         <div class="office_list"></div>
-        <div class="office_add_item"></div>
-        <div class="v4_69"></div><span class="v4_58">CSC 642 Phase 3</span><span class="v4_59">CSC 600 Homework
-            2</span><span class="v4_55">Send out the report</span>
-        <div class="personal_list"></div><span class="v4_57">Go to the bank</span>
+
+        <div class="personal_list"></div>
         <div class="personal_title"></div>
         <div class="office_title"></div>
         <div class="university_title"></div>
@@ -54,17 +50,25 @@
             <div class="modal-content">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <input style="height:40px;font-size:14pt; font-family: Inter;
-                font-weight: Regular; text-align:center;"
-                align = "middle" type="text" id="addTitle" name="addTitle" placeholder="Title">
-              </div>
-              <div class="modal-body">
                 <input style = "font-family: Inter;
-                font-weight: Regular; text-align:center;"
-                type="text" id="addToDo" name="addToDo" placeholder="Add To Do...">
+                font-weight: Regular;"
+                type="text" id="adduniveristy" name="adduniveristy" placeholder="Add item to University" onclick="onButtonClick()">
               </div>
+
+              <div class="modal-header">
+                <input style = "font-family: Inter;
+                font-weight: Regular;"
+                type="text" id="addoffice" name="addoffice" placeholder="Add item to Office" onclick="onButtonClick()">
+              </div>
+
+              <div class="modal-header">
+                <input style = "font-family: Inter;
+                font-weight: Regular;"
+                type="text" id="addpersonal" name="addpersonal" placeholder="Add item to Personal" onclick="onButtonClick()">
+              </div>
+
               <div class="modal-footer">
-                <button type="button" class="btn btn-default" style="height:40px;font-size:14pt; font-family: Inter;
+                <button type="button" id="post_button" class="btn btn-default" style="height:40px;font-size:14pt; font-family: Inter;
                 font-weight: Regular; text-align:center; background:rgba(158,118,205,1); border-radius: 15%;">Post</button>
               </div>
             </div>
@@ -72,22 +76,45 @@
           </div>
         </div>
 
-        <span class="drop_down_todo1">To-Do</span><span class="v4_42">To-Do</span><span
-            class="v4_44">University</span><span class="v4_46">Office</span><span class="v4_45">Personal</span>
+        <span class="v4_42">To-Do</span>
+        <span class="v4_44">University</span>
+        <span class="v4_46">Office</span>
+        <span class="v4_45">Personal</span>
+        <span class="v4_58">CSC 642 Phase 3</span>
+        <span class="v4_59">CSC 600 Homework 2</span>
+        <span class="v4_55">Send out the report</span>
+        <span class="v4_57">Go to the bank</span>
+        <span class="v4_47">Work on PPT</span>
+        <span class="v4_56" id=" addedItem">Go to grocery store</span>
 
-            <span class="v4_47">Work on PPT</span>
-            <span class="v4_56">Grocery Shopping</span>
+            <p class="university_output" id="university_output"></p><br>
+            <p class="office_output" id="office_output"></p><br>
+            <p class="personal_output" id="personal_output" style="  display: list-item;
+              list-style-type: disc;
+              list-style-position: inside;"></p><br>
 
-            <span class="v4_63">Add Item</span><span class="v4_73">Add Item</span><span class="v4_74">Add Item</span>
-        <div class="v4_64">
-          <!div class="plus">
-            <div class="bar horizontal"></div>
-            <div class="bar vertical"></div>
-            <input type="button" name="answer" onclick="onButtonClick()" />
-            <input class="hide" type="text" id="textInput" />
-          <!/div>
         </div>
     </div>
+    <script>
+
+      document.getElementById("post_button").addEventListener("click", () =>{
+        document.getElementById("university_output").innerHTML += document.getElementById("adduniveristy").value;
+    });
+    </script>
+
+    <script>
+
+      document.getElementById("post_button").addEventListener("click", () =>{
+        document.getElementById("office_output").innerHTML += document.getElementById("addoffice").value;
+    });
+    </script>
+
+    <script>
+
+      document.getElementById("post_button").addEventListener("click", () =>{
+        document.getElementById("personal_output").innerHTML += document.getElementById("addpersonal").value;
+   });
+   </script>
 </body>
 
 </html>
