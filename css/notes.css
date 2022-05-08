@@ -69,7 +69,7 @@ body {
 }
 .v3_51 {
   width: 369px;
-  color: rgba(255,255,255,1);
+  color: rgb(196, 17, 17);
   position: absolute;
   top: 348px;
   left: 146px;
@@ -81,7 +81,7 @@ body {
 }
 .v3_52 {
   width: 299px;
-  color: rgba(255,255,255,1);
+  color: rgb(32, 28, 28);
   position: absolute;
   top: 338px;
   left: 521px;
@@ -410,20 +410,6 @@ body {
   transform: rotate(-90deg);
   overflow: hidden;
 }
-.v5_73 {
-  width: 15px;
-  height: 115px;
-  background: rgba(74,33,123,1);
-  opacity: 1;
-  position: absolute;
-  top: 861px;
-  left: 1327px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  overflow: hidden;
-}
 .v3_72 {
   width: 294px;
   color: rgba(87,32,32,1);
@@ -517,7 +503,7 @@ body, html {
     text-align: center;
 }
 a{
-    color: #FCCB06;
+    color: #fc0606;
     text-decoration: none;
 }
 .title{
