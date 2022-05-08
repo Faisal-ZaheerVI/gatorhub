@@ -228,7 +228,7 @@ body {
   background: rgba(158,118,205,1);
   opacity: 1;
   position: absolute;
-  top: 835px;
+  top: 200px;
   left: 1249px;
   border-radius: 50%;
 }
@@ -565,10 +565,6 @@ body {
 }
 .show{
   display:block;
-}
-
-function onButtonClick(){
-  document.getElementById('textInput').className="show";
 }
 
 img {
