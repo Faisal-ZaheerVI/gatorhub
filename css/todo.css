@@ -217,9 +217,9 @@ body {
   height: 150px;
   background: rgba(158,118,205,1);
   opacity: 1;
-  position: absolute;
-  top: 835px;
-  left: 1249px;
+  position: fixed;
+  top: 75%;
+  left: 85%;
   border-radius: 50%;
 }
 .bar {
