@@ -7,8 +7,10 @@
         <link rel="stylesheet" href="../css/nav.css">
         <link rel="stylesheet" href="../css/todo.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <title>Agenda (Wednesday) - Gatorhub</title>
+        <script src="./js/add_event.js" defer></script>
     </head>
     <body>
       <div class="nav-bar">
@@ -25,12 +27,17 @@
     </div>
         <span class="v1_172">Agenda</span>
         <div class="v1_168"></div>
-        <div class="v1_163"></div>
+        <div id="agenda_events">
+          <!-- <div class="v1_165"></div>
+          <span class="v1_166">6:00pm - Group Work</span> -->
+          <div class="v1_163"></div>
+          <span class="v1_164">7:00pm - Group Work</span>
+        </div>
         <div class="dayhighlight"></div>
         <span class="v1_143">Wednesday</span>
         <span class="currentDate">MM/DD/2022</span>
         <div class="add"></div>
-        <span class="v1_164">7:00pm - Group Work</span>
+        <!-- <span class="v1_164">7:00pm - Group Work</span> -->
         <div>
             <button class="prev" onclick="window.location.href = '../Agenda%20-%20NewDay/index.html';">
               &#10094;
@@ -53,8 +60,7 @@
                 <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                   <input style="height:40px;font-size:14pt; font-family: Inter;
-                  font-weight: Regular; text-align:center;"
-                  align = "middle" type="text" id="addTitle" name="addTitle" placeholder="Title">
+                  font-weight: Regular; text-align:center;" type="text" id="addTitle" name="addTitle" placeholder="Title">
                 </div>
                 <div class="modal-body">
                   <input style = "font-family: Inter;
@@ -62,21 +68,23 @@
                   type="text" id="addToDo" name="addToDo" placeholder="Add To Do...">
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-default" style="height:40px;font-size:14pt; font-family: Inter;
+                  <button onclick="addEvent()" type="button" class="btn btn-default" style="height:40px;font-size:14pt; font-family: Inter;
                   font-weight: Regular; text-align:center; background:rgba(158,118,205,1); border-radius: 15%;">Post</button>
                 </div>
               </div>
 
         
-            <!--Add(+) Button-->
-            <button type="button" class="plus_button" data-toggle="modal" data-target="#myModal" id = plusButton>
-              <div class="plus" >
-                <div class="bar horizontal"></div>
-                <div class="bar vertical"></div>
-              </div>
-            </button>
+            
   
             </div>
           </div>
+
+          <!--Add(+) Button-->
+          <button type="button" class="plus_button" data-toggle="modal" data-target="#myModal" id = plusButton>
+            <div class="plus" >
+              <div class="bar horizontal"></div>
+              <div class="bar vertical"></div>
+            </div>
+          </button>
     </body>
 </html>

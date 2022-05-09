@@ -3,6 +3,7 @@
   }
   body {
     font-size: 14px;
+    background: #b29cba;
   }
   /*purple header*/
   .v1_107 {
@@ -76,6 +77,30 @@
     font-weight: Regular;
     font-size: 20px;
   }
+
+  .v1_165 {
+    width: 615px;
+    height: 100px;
+    background: rgb(6, 117, 252);
+    opacity: 1;
+    position: absolute;
+    top: 500px;
+    left: 410px;
+    overflow: hidden;
+  }
+  
+  .v1_166 {
+    width: 422px;
+    color: rgba(0,0,0,1);
+    position: absolute;
+    top: 531px;
+    left: 531px;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 40px;
+    opacity: 1;
+    text-align: left;
+  }
   
   /*gray box*/
   .v1_168 {
@@ -113,7 +138,7 @@
     padding-top: 4px;
     position: relative;
     top: -15px;
-    right: 590px;
+    right: 1090px;
   }
   .calendar{
     position: relative;
