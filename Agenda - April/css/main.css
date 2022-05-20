@@ -48,7 +48,8 @@ body {font-family: Verdana, sans-serif;}
 .month {
   height: 150px;
   width: 100%;
-  background: #1abc9c;
+  /* background: #1abc9c; */
+  background: #b29cba;
   text-align: center;
 }
 
@@ -59,7 +60,7 @@ body {font-family: Verdana, sans-serif;}
 }
 
 .month ul li {
-  color: white;
+  color: black;
   font-size: 25px;
   text-transform: uppercase;
   letter-spacing: 3px;
