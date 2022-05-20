@@ -3,7 +3,7 @@
 }
 body {
   font-size: 14px;
-  background: #b29cba;
+  background: white;
 }
 .v1_3 {
   width: 100%;
@@ -28,7 +28,7 @@ body {
 .v3_5 {
   width: 328px;
   height: 653px;
-  background: rgba(211,136,23,1);
+  background: lightgray;
   opacity: 1;
   position: absolute;
   top: 316px;
@@ -50,7 +50,7 @@ body {
 .v3_7 {
   width: 336px;
   height: 653px;
-  background: rgba(96,61,198,1);
+  background: lightgray;
   opacity: 1;
   position: absolute;
   top: 320px;
@@ -95,7 +95,7 @@ body {
 .v3_6 {
   width: 305px;
   height: 653px;
-  background: rgba(207,235,215,1);
+  background: lightgray;
   opacity: 1;
   position: absolute;
   top: 323px;
@@ -114,14 +114,14 @@ body {
   text-align: left;
 }
 .v3_14 {
-  width: 307px;
+  width: 334px;
   height: 82px;
-  background: rgba(251,25,25,1);
+  background: black;
   opacity: 1;
   position: absolute;
   top: 249px;
   left: 146px;
-  border-radius: 50%;
+
 }
 .v3_50 {
   width: 181px;
@@ -145,18 +145,17 @@ body {
   left: 140px;
 }
 .v3_16 {
-  width: 306px;
+  width: 310px;
   height: 82px;
-  background: rgba(226,33,172,1);
+  background: black;
   opacity: 1;
   position: absolute;
   top: 241px;
   left: 865px;
-  border-radius: 50%;
 }
 .v3_28 {
   width: 168px;
-  color: rgba(0,0,0,1);
+  color: white;
   position: absolute;
   top: 241px;
   left: 926px;
@@ -167,9 +166,9 @@ body {
   text-align: left;
 }
 .v3_17 {
-  width: 328px;
+  width: 334px;
   height: 82px;
-  background: rgba(196,196,196,1);
+  background: black;
   opacity: 1;
   position: absolute;
   top: 252px;
@@ -177,7 +176,7 @@ body {
 }
 .v3_26 {
   width: 164px;
-  color: rgba(0,0,0,1);
+  color: white;
   position: absolute;
   top: 255px;
   left: 600px;
@@ -289,7 +288,7 @@ body {
 .v3_40 {
   width: 164px;
   height: 34px;
-  background: rgba(200,154,255,1);
+  background:rgba(200,154,255,1);
   opacity: 1;
   position: absolute;
   top: 135px;
@@ -303,7 +302,7 @@ body {
 .v3_41 {
   width: 164px;
   height: 34px;
-  background: rgba(200,154,255,1);
+  background: white;
   opacity: 1;
   position: absolute;
   top: 179px;
